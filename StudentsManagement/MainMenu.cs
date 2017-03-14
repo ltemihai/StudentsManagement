@@ -112,5 +112,24 @@ namespace StudentsManagement
             UpdateCourseForm courseForm = new UpdateCourseForm();
             courseForm.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            FindStudentForm findForm = new FindStudentForm();
+            findForm.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FindCoursesByStudents findForm = new FindCoursesByStudents();
+            findForm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            
+            FindStudentsByCourses findForm = new FindStudentsByCourses();
+            findForm.Show();
+        }
     }
 }

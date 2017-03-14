@@ -25,23 +25,8 @@ namespace StudentsManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection(MainMenu.connectionString);
-            try
-            {
-                connection.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Nu esti conectat la baza de date");
-                connection.Close();
-            }
-            MySqlCommand command = new MySqlCommand("INSERT INTO enrolment(date,idStudent,idCourse) VALUES (@date,@idStudent,@idCourse)", connection);
-            command.Parameters.AddWithValue("@date", textBox3.Text);
-            command.Parameters.AddWithValue("@idStudent", textBox1.Text);
-            command.Parameters.AddWithValue("@idCourse", textBox2.Text);
-            command.ExecuteNonQuery();
-            connection.Close();
-            MessageBox.Show("Studentul cu ID-ul " + textBox1.Text + " a fost inrolat la cursul cu ID-ul" + textBox2.Text);
+            ServerGateway serverGateway = new ServerGateway();
+            serverGateway.EnrollQuery(textBox1.Text, textBox2.Text, textBox3.Text);
             this.Close();
         }
     }

@@ -116,25 +116,9 @@ namespace StudentsManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection(MainMenu.connectionString);
-            try
-            {
-                connection.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Nu esti conectat la baza de date");
-                connection.Close();
-            }
-            MySqlCommand command = new MySqlCommand("INSERT INTO students(name,birthdate,address) VALUES (@name,@birthdate,@address)", connection);
-            command.Parameters.AddWithValue("@name", textBox1.Text);
-            command.Parameters.AddWithValue("@birthdate", textBox2.Text);
-            command.Parameters.AddWithValue("@address", textBox3.Text);
-            command.ExecuteNonQuery();
-            connection.Close();
-            MessageBox.Show("Studentul " + textBox1.Text + " a fost adaugat cu succes");
-            this.Close();
-            
+            ServerGateway serverGateway = new ServerGateway();
+            serverGateway.AddStudentQuery(textBox1.Text, textBox2.Text, textBox3.Text);
+            Close();      
         }
     }
 }

@@ -25,21 +25,9 @@ namespace StudentsManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection(MainMenu.connectionString);
-            try
-            {
-                connection.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Nu esti conectat la baza de date");
-                connection.Close();
-            }
-            MySqlCommand command = new MySqlCommand("DELETE FROM students WHERE idstudents = "+textBox1.Text, connection);
-            command.ExecuteNonQuery();
-            connection.Close();
-            MessageBox.Show("Studentul cu id-ul " + textBox1.Text + " a fost sters cu succes");
-            this.Close();
+            ServerGateway serverGateway = new ServerGateway();
+            serverGateway.RemoveStudentQuery(textBox1.Text);
+            Close();
         }
     }
 }
