@@ -74,6 +74,24 @@
     <Compile Include="EnrollForm.Designer.cs">
       <DependentUpon>EnrollForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FindCoursesByStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCoursesByStudents.Designer.cs">
+      <DependentUpon>FindCoursesByStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindStudentForm.Designer.cs">
+      <DependentUpon>FindStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindStudentsByCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindStudentsByCourses.Designer.cs">
+      <DependentUpon>FindStudentsByCourses.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +138,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>schooldbDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ServerGateway.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="UpdateCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +157,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EnrollForm.resx">
       <DependentUpon>EnrollForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCoursesByStudents.resx">
+      <DependentUpon>FindCoursesByStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindStudentForm.resx">
+      <DependentUpon>FindStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindStudentsByCourses.resx">
+      <DependentUpon>FindStudentsByCourses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
