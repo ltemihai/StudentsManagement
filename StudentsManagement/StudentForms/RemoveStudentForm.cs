@@ -25,7 +25,7 @@ namespace StudentsManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ServerGateway serverGateway = new ServerGateway();
+            StudentGateway serverGateway = new StudentGateway();
             serverGateway.RemoveStudentQuery(textBox1.Text);
             Close();
         }

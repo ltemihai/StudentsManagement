@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,18 +11,18 @@ using System.Windows.Forms;
 
 namespace StudentsManagement
 {
-    public partial class FindStudentsByCourses : Form
+    public partial class RemoveCourseForm : Form
     {
-        public FindStudentsByCourses()
+        public RemoveCourseForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ServerGateway serverGateway = new ServerGateway();
-            DataTable dataTable = serverGateway.FindStudentsByCourses(textBox1.Text);
-            dataGridView1.DataSource = dataTable;
+            CourseGateway serverGateway = new CourseGateway();
+            serverGateway.RemoveCourseQuery(textBox1.Text);
+            Close();
         }
     }
 }

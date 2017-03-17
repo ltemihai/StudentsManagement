@@ -106,7 +106,7 @@
             this.birthdateDataGridViewTextBoxColumn1,
             this.addressDataGridViewTextBoxColumn1});
             this.dataGridView1.DataSource = this.studentsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(340, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(305, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(403, 375);
             this.dataGridView1.TabIndex = 1;
@@ -156,7 +156,7 @@
             this.teacherDataGridViewTextBoxColumn,
             this.studyyearDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.coursesBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(767, 47);
+            this.dataGridView2.Location = new System.Drawing.Point(726, 47);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(393, 375);
             this.dataGridView2.TabIndex = 2;
@@ -206,7 +206,7 @@
             this.idStudentDataGridViewTextBoxColumn,
             this.idCourseDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.enrolmentBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(1193, 47);
+            this.dataGridView3.Location = new System.Drawing.Point(1134, 47);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(393, 375);
             this.dataGridView3.TabIndex = 3;
@@ -374,7 +374,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(123, 286);
+            this.button8.Location = new System.Drawing.Point(106, 286);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 12;
@@ -386,7 +386,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(96, 249);
+            this.label3.Location = new System.Drawing.Point(70, 248);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 24);
             this.label3.TabIndex = 13;
@@ -394,7 +394,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(94, 315);
+            this.button9.Location = new System.Drawing.Point(74, 315);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(141, 23);
             this.button9.TabIndex = 14;
@@ -404,7 +404,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(42, 344);
+            this.button10.Location = new System.Drawing.Point(22, 344);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(257, 23);
             this.button10.TabIndex = 15;
@@ -414,7 +414,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(42, 373);
+            this.button11.Location = new System.Drawing.Point(22, 373);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(257, 23);
             this.button11.TabIndex = 16;
@@ -426,7 +426,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1628, 463);
+            this.ClientSize = new System.Drawing.Size(1541, 447);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);

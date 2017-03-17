@@ -62,60 +62,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCourseForm.cs">
+    <Compile Include="CourseForms\AddCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCourseForm.Designer.cs">
+    <Compile Include="CourseForms\AddCourseForm.Designer.cs">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EnrollForm.cs">
+    <Compile Include="Gateways\CourseGateway.cs" />
+    <Compile Include="EnrollForm\EnrollForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EnrollForm.Designer.cs">
+    <Compile Include="EnrollForm\EnrollForm.Designer.cs">
       <DependentUpon>EnrollForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FindCoursesByStudents.cs">
+    <Compile Include="Gateways\EnrollGateway.cs" />
+    <Compile Include="CourseForms\FindCoursesByStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FindCoursesByStudents.Designer.cs">
+    <Compile Include="CourseForms\FindCoursesByStudents.Designer.cs">
       <DependentUpon>FindCoursesByStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="FindStudentForm.cs">
+    <Compile Include="StudentForms\FindStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FindStudentForm.Designer.cs">
+    <Compile Include="StudentForms\FindStudentForm.Designer.cs">
       <DependentUpon>FindStudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FindStudentsByCourses.cs">
+    <Compile Include="StudentForms\FindStudentsByCourses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FindStudentsByCourses.Designer.cs">
+    <Compile Include="StudentForms\FindStudentsByCourses.Designer.cs">
       <DependentUpon>FindStudentsByCourses.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="MainMenuForms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
+    <Compile Include="MainMenuForms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStudentForm.cs">
+    <Compile Include="StudentForms\AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddStudentForm.Designer.cs">
+    <Compile Include="StudentForms\AddStudentForm.Designer.cs">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Application\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoveCourseForm.cs">
+    <Compile Include="CourseForms\RemoveCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RemoveCourseForm.Designer.cs">
+    <Compile Include="CourseForms\RemoveCourseForm.Designer.cs">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RemoveStudentForm.cs">
+    <Compile Include="StudentForms\RemoveStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RemoveStudentForm.Designer.cs">
+    <Compile Include="StudentForms\RemoveStudentForm.Designer.cs">
       <DependentUpon>RemoveStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="schooldbDataSet11.Designer.cs">
@@ -138,39 +140,39 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>schooldbDataSet3.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ServerGateway.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="UpdateCourseForm.cs">
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Gateways\StudentGateway.cs" />
+    <Compile Include="CourseForms\UpdateCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateCourseForm.Designer.cs">
+    <Compile Include="CourseForms\UpdateCourseForm.Designer.cs">
       <DependentUpon>UpdateCourseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateStudentForm.cs">
+    <Compile Include="StudentForms\UpdateStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateStudentForm.Designer.cs">
+    <Compile Include="StudentForms\UpdateStudentForm.Designer.cs">
       <DependentUpon>UpdateStudentForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCourseForm.resx">
+    <EmbeddedResource Include="CourseForms\AddCourseForm.resx">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EnrollForm.resx">
+    <EmbeddedResource Include="EnrollForm\EnrollForm.resx">
       <DependentUpon>EnrollForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FindCoursesByStudents.resx">
+    <EmbeddedResource Include="CourseForms\FindCoursesByStudents.resx">
       <DependentUpon>FindCoursesByStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FindStudentForm.resx">
+    <EmbeddedResource Include="StudentForms\FindStudentForm.resx">
       <DependentUpon>FindStudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FindStudentsByCourses.resx">
+    <EmbeddedResource Include="StudentForms\FindStudentsByCourses.resx">
       <DependentUpon>FindStudentsByCourses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
+    <EmbeddedResource Include="MainMenuForms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStudentForm.resx">
+    <EmbeddedResource Include="StudentForms\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -182,16 +184,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RemoveCourseForm.resx">
+    <EmbeddedResource Include="CourseForms\RemoveCourseForm.resx">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RemoveStudentForm.resx">
+    <EmbeddedResource Include="StudentForms\RemoveStudentForm.resx">
       <DependentUpon>RemoveStudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateCourseForm.resx">
+    <EmbeddedResource Include="CourseForms\UpdateCourseForm.resx">
       <DependentUpon>UpdateCourseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateStudentForm.resx">
+    <EmbeddedResource Include="StudentForms\UpdateStudentForm.resx">
       <DependentUpon>UpdateStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

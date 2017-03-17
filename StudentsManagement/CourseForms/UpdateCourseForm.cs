@@ -11,23 +11,18 @@ using System.Windows.Forms;
 
 namespace StudentsManagement
 {
-    public partial class EnrollForm : Form
+    public partial class UpdateCourseForm : Form
     {
-        public EnrollForm()
+        public UpdateCourseForm()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            ServerGateway serverGateway = new ServerGateway();
-            serverGateway.EnrollQuery(textBox1.Text, textBox2.Text, textBox3.Text);
-            this.Close();
+            CourseGateway serverGateway = new CourseGateway();
+            serverGateway.UpdateCourseQuery(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+            Close();
         }
     }
 }

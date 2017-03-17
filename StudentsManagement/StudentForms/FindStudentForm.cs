@@ -19,7 +19,7 @@ namespace StudentsManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ServerGateway serverGateway = new ServerGateway();
+            StudentGateway serverGateway = new StudentGateway();
             DataTable dataTable = serverGateway.FindStudent(textBox1.Text);
             dataGridView1.DataSource = dataTable;
         
